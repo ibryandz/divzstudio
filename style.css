@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100..1000&display=swap');
+
+:root {
+  --flamingo-color: #F15025;
+  --roboto-flex-extraBlack: 1000;
+  --roboto-flex-size: 98px;
+  --roboto-flex-line-height: 80%;
+  --primary: #F15025;
+  --white: #fff;  
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    max-width: 80vw;
+    background-color: black;
+    color: white;
+    max-width: 100vw;
+}
+
+.main{
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    place-self: center;
+}
+.btn{
+    display: inline-flex;
+    padding: 24px 45px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 16px;
+    background: var(--Flamingo-500, #F15025);
+    color: #FFF;
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 21.489px;
+    font-style: normal;
+    font-weight: 1000;
+    line-height: 80%; /* 17.191px */
+    width: 16rem;
+    cursor: pointer;
+}
+/*  NAV     ------------------------- */
+
+.nav{
+
+    position: fixed;
+    display: flex;
+    width: 80VW;
+    place-self: center;
+    z-index: 99999999999;
+    margin-bottom: 20vh;
+
+}
+
+.nav__ul{
+    display: flex;
+    width: 90%;
+    height: 90px;
+    padding: 41.397px 32.526px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    list-style: none;
+}
+
+.nav__li{
+    cursor: pointer;
+    color: #FFF;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    -height: 120%; /* 24px */
+    
+}
+
+
+.nav__logo{
+    width: 131.081px;
+    height: 54.709px;
+    flex-shrink: 0;
+}
+/*          HERO -------------------------*/
+.hero__bg{
+    height: 1000px;
+    z-index: 9;
+    top: 0rem;
+    position: absolute;
+    transition: transform 100s;
+    transform: rotate(10turn);
+    place-self: center;
+}
+
+.hero{
+    z-index: 999999;
+    position: relative;
+    top: 10rem;
+    display: flex;
+    flex-flow: column;
+    height: 80vh;
+}
+
+.hero p, h2{
+    font-family: "Roboto", sans-serif;
+    color: #FFF;
+
+
+}
+
+.hero h2{
+    display: inline-block;
+    place-self: center;
+    color: #FFF;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+    width: 50vw;
+
+}
+
+.hero p{
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 200;
+    line-height: 110%; 
+    width: 50vw;
+    align-self: center;
+
+}
+
+.hero__logo{
+    width: 564.164px;
+    height: 269.429px;
+    position: relative;
+    margin: 0 auto;
+
+    
+}
+
+/*  ABOUT --------------------------    */
+
+.hands{
+    z-index: 8;
+    position: absolute;
+    max-width: 100%;
+    place-self: center;
+    transform: scale(1.1);
+    left: 0;
+    top: 0vh;
+}
+
+.about{
+    top: 30vh;
+    display: flex;
+    position: relative;
+    z-index: 99999;
+    place-content: center;
+    margin-bottom: 40vh;
+}
+
+.about button{
+    position: relative;
+    top: 6rem;
+    place-self: center;
+}
+.about h2{
+    z-index: 88888;
+    color: var(--Flamingo-500, #F15025);
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-size: 98px;
+    font-style: normal;
+    line-height: 80%;
+    max-width: 40vw;
+}
+
+.about__cont{
+    z-index: 8888;
+    display: flex;
+}
+
+.about p{
+
+    color: #FFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 32.465px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 110%; /* 35.712px */
+    max-width: 30vw;
+}
+
+.about__eye{
+    place-self: center;
+    width: 177.065px;
+    height: 175.06px;
+    flex-shrink: 0;
+}
+
+.p__cont{
+    display: flex;
+    flex-flow: column;
+}
+
+/*  PROJECTS --------------------------    */
+
+
+
+.img__cont{
+    display: flex;
+    flex-flow: column;
+  
+    
+}
+.projects{
+    display: flex;
+    flex-flow: column;
+    place-self: center;
+    z-index: 999999;
+    position: relative;
+    margin-top: 16rem;
+    width: 100%;
+    margin-bottom: 40vh;
+
+
+}
+
+.projects__cont{
+    display: flex;
+    flex-flow: column;
+    row-gap: 128px;
+
+}
+
+
+.heart__svg{
+    top: -30rem;
+    z-index: -999999;
+ 
+    position: absolute;
+    align-self: center;
+    width: 1197.801px;
+    height: 2279.592px;
+    transform: rotate(15deg);
+
+
+}
+
+.proj__cont{
+    place-content: center;
+    column-gap: 24px;
+    display: flex;
+    flex-direction: row;
+}
+
+.projects__tit{
+    align-self: center;
+    max-width: 630px;
+    max-height: 471.264px;
+    flex-shrink: 0;
+    
+}
+.logo__cont{
+    display: flex;
+    flex-flow: column;
+    width: 530.044px;
+    height: 647.113px;
+    flex-shrink: 0;
+    
+    row-gap: 4px;
+}
+
+.p__img{
+    display: flex;
+    width: 530.044px;
+    height: 568.109px;
+    padding: 101.317px 103.739px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border: 2px solid #FFF;
+    border-radius: 4px;
+}
+
+.p__img img{
+    width: 322.565px;
+    height: 365.476px;
+    flex-shrink: 0;
+    place-self: center;
+}
+
+.p__tit{
+    display: inline-flex;
+    height: 63.921px;
+    padding: 12px 64px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    color: var(--Flamingo-500, #F15025);
+    font-family: "Roboto Flex";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 1000;
+    line-height: 80%; /* 45.082px */
+    border: 2px solid #FFF;
+    border-radius: 4px;
+}
+
+.p__info{
+    display: flex;
+    flex-direction: column;
+    width: 530px;
+    height: 647px;
+    justify-content: space-between;
+  
+}
+
+.p__info p{
+    color: #FFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 100;
+    line-height: 110%; /* 35.712px */
+    max-width: 30vw;
+    padding: 0px 24px ;
+    text-align: center;
+    
+}
+
+.p__info h2{
+    color: var(--Flamingo-500, #F15025);
+    font-family: "Roboto Flex";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 1000;
+    line-height: 80%; /* 45.082px */
+    text-align: center;
+}
+
+.p__info button{
+    place-self: center;
+}
+
+/*  SERVICES ----------------------------------------------------*/
+.srv__bg{
+    z-index: -77777777;
+   position: absolute; 
+   max-width: 100%;
+   left: 0;
+   height: 1500px;
+   top: -200px;
+   opacity: .7;
+}
+.services{
+    position: relative;
+    z-index: 999999;
+    display: flex;
+    flex-direction: column;
+    place-self: center;
+    row-gap: 128px;
+    margin-top: 16vh;
+    margin-bottom: 40vh;
+
+}
+
+.serv__tit  {
+    width: 997.535px;
+    height: 289px;
+}
+
+.card__cont{
+    display: flex;
+    flex-direction: row;
+    column-gap: 16px;
+}
+
+.s__card{
+    display: flex;
+    width: 376.226px;
+    height: 518.426px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 14.135px;
+    border: 0.883px solid var(--Flamingo-500, #F15025);
+    background-color: var(--Woodsmoke-950, #191919);
+    background-color: #1919197A; /* Hexadecimal with Alpha */
+    background-color: rgba(25, 25, 25, 0.8); /* RGBA Function */
+
+    transition: transform 1s;
+
+}
+
+.s__card:hover{
+    transform: scale(1.1);
+}
+
+.card__tit {
+    justify-self: baseline ;
+    color: var(--Flamingo-500, #F15025);
+    font-family: "Roboto Flex";
+    font-size: 31.805px;
+    font-style: normal;
+    font-weight: 1000;
+    line-height: 80%; /* 25.444px */
+
+}
+
+.card__img{
+    width: 295.078px;
+    height: 292.427px;
+    flex-shrink: 0;
+
+}
+
+.s__card p{
+    color: var(--Flamingo-500, #F15025);
+    text-align: center;
+    font-family: "Roboto Flex";
+    font-size: 13.889px;
+    font-style: normal;
+    font-weight: 1000;
+    line-height: 80%; /* 11.111px */
+    padding: 0 16px;
+}
+
+
+.c__btn{
+    color: #191919;
+    display: inline-flex;
+    padding: 21.203px 39.756px;
+    justify-content: center;
+    align-items: center;
+    gap: 8.835px;
+    border-radius: 10.341px;
+    background: var(--Flamingo-500, #F15025);
+    height: 15px;
+    width: auto;
+    font-family: "Roboto Flex";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 1000;
+    line-height: 80%;
+}
+
+
