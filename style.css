@@ -19,7 +19,8 @@ body{
     max-width: 80vw;
     background-color: black;
     color: white;
-    max-width: 100vw;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .main{
@@ -31,7 +32,7 @@ body{
 }
 .btn{
     display: inline-flex;
-    padding: 24px 45px;
+    padding: 18px 37px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -39,12 +40,13 @@ body{
     background: var(--Flamingo-500, #F15025);
     color: #FFF;
     font-family: "Roboto Flex", sans-serif;
-    font-size: 21.489px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 1000;
     line-height: 80%; /* 17.191px */
-    width: 16rem;
+    width: 14rem;
     cursor: pointer;
+    border: none;
 }
 /*  NAV     ------------------------- */
 
@@ -70,6 +72,8 @@ body{
     list-style: none;
 }
 
+
+
 .nav__li{
     cursor: pointer;
     color: #FFF;
@@ -78,6 +82,25 @@ body{
     font-style: normal;
     font-weight: 600;
     -height: 120%; /* 24px */
+    transition: transform 1s;
+
+
+    
+}
+
+.nav__li:hover{
+    transform: scale(1.3);
+}
+
+.nav__li a, .foot__a{
+    text-decoration: none;
+    color: #FFF;
+    transition:  color 1s;
+}
+
+.nav__li a:hover{
+    
+    color: #F15025;
     
 }
 
@@ -105,6 +128,7 @@ body{
     display: flex;
     flex-flow: column;
     height: 80vh;
+    place-content: center;
 }
 
 .hero p, h2{
@@ -241,7 +265,7 @@ body{
 .projects__cont{
     display: flex;
     flex-flow: column;
-    row-gap: 128px;
+    row-gap: 100px;
 
 }
 
@@ -276,29 +300,28 @@ body{
 .logo__cont{
     display: flex;
     flex-flow: column;
-    width: 530.044px;
-    height: 647.113px;
+    width: 430.044px;
+    height: 547.113px;
     flex-shrink: 0;
-    
     row-gap: 4px;
 }
 
 .p__img{
     display: flex;
-    width: 530.044px;
-    height: 568.109px;
+    width: 430.044px;
+    height: 447.113px;
     padding: 101.317px 103.739px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
     border: 2px solid #FFF;
-    border-radius: 4px;
+    border-radius: 8px;
 }
 
 .p__img img{
-    width: 322.565px;
-    height: 365.476px;
+    width: 222.565px;
+    height: 265.476px;
     flex-shrink: 0;
     place-self: center;
 }
@@ -312,7 +335,7 @@ body{
     flex-shrink: 0;
     color: var(--Flamingo-500, #F15025);
     font-family: "Roboto Flex";
-    font-size: 40px;
+    font-size: 32px;
     font-style: normal;
     font-weight: 1000;
     line-height: 80%; /* 45.082px */
@@ -324,19 +347,18 @@ body{
     display: flex;
     flex-direction: column;
     width: 530px;
-    height: 647px;
     justify-content: space-between;
+    align-items: center;
   
 }
 
 .p__info p{
     color: #FFF;
     font-family: "Roboto", sans-serif;
-    font-size: 28px;
+    font-size: 24px;
     font-style: italic;
     font-weight: 100;
     line-height: 110%; /* 35.712px */
-    max-width: 30vw;
     padding: 0px 24px ;
     text-align: center;
     
@@ -372,15 +394,15 @@ body{
     display: flex;
     flex-direction: column;
     place-self: center;
-    row-gap: 128px;
+    row-gap: 64px;
     margin-top: 16vh;
     margin-bottom: 40vh;
 
 }
 
 .serv__tit  {
-    width: 997.535px;
-    height: 289px;
+    width: 897.535px;
+    height: 200px;
 }
 
 .card__cont{
@@ -391,8 +413,8 @@ body{
 
 .s__card{
     display: flex;
-    width: 376.226px;
-    height: 518.426px;
+    width: 276.226px;
+    height: 418.426px;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
@@ -415,7 +437,7 @@ body{
     justify-self: baseline ;
     color: var(--Flamingo-500, #F15025);
     font-family: "Roboto Flex";
-    font-size: 31.805px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 1000;
     line-height: 80%; /* 25.444px */
@@ -423,8 +445,8 @@ body{
 }
 
 .card__img{
-    width: 295.078px;
-    height: 292.427px;
+    width: 195.078px;
+    height: 192.427px;
     flex-shrink: 0;
 
 }
@@ -433,9 +455,9 @@ body{
     color: var(--Flamingo-500, #F15025);
     text-align: center;
     font-family: "Roboto Flex";
-    font-size: 13.889px;
+    font-size: 16px;
     font-style: normal;
-    font-weight: 1000;
+    font-weight: 300;
     line-height: 80%; /* 11.111px */
     padding: 0 16px;
 }
@@ -444,7 +466,7 @@ body{
 .c__btn{
     color: #191919;
     display: inline-flex;
-    padding: 21.203px 39.756px;
+    padding: 16px 32px;
     justify-content: center;
     align-items: center;
     gap: 8.835px;
@@ -453,10 +475,135 @@ body{
     height: 15px;
     width: auto;
     font-family: "Roboto Flex";
-    font-size: 16px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 1000;
     line-height: 80%;
+    margin-bottom: .4rem;
 }
+
+/*  CONTACT ----------------------------------------------------*/
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40vh;
+}
+
+.c__cont{
+    display: flex;
+    flex-direction: column;
+    place-self: center;
+    place-items: center;
+    row-gap: 2.5rem;
+}
+
+.c__img{
+    height: 279px;
+}
+
+.eye_b{
+    height: 250px;
+    width: 250px;
+}
+
+.o {
+    width: fit-content;
+    border: 1px solid #F15025;
+    background-color: rgba(0, 0, 0, 0);
+    color: #F15025;
+}
+
+/*  FOOTER ----------------------------------------------------*/
+
+.foot{
+    background-color: #F15025;
+    height: 100%
+}
+.foot__ul{
+    justify-self: center ;
+    display: inline-flex;
+    flex-direction: column;
+    list-style: none;
+    row-gap: .8rem;
+    position: relative;
+    height: max-content;
+    padding: .5rem .7rem;
+}
+
+.foot__li{
+    display: flex;
+
+}
+
+.foot__a{
+    color: var(--Woodsmoke-950, #191919);
+    font-family: "Roboto Flex";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 80%; /* 32px */
+    transition: color 1s;
+}
+
+.foot__a:hover{
+    color: blue;
+}
+
+.f__emblem{
+    width: 295.277px;
+    height: 462.078px;
+    flex-shrink: 1s;
+}
+
+.moon{
+    opacity: .25;
+    position: absolute;
+    width: 495.277px;
+    height: 462.078px;
+    transition: transform 100s;
+    transform: rotate(10turn) ;
+
+}
+
+
+
+
+.f__cont{
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1020px){
+
+
+    .main{
+        max-width: 100%;
+    }
+    
+    .nav{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        padding: 0;
+    }
+
+    .nav__li a{
+        font-size: 1rem;
+    }
+
+    .nav__ul{
+        width: 100%;
+        column-gap: 16px;
+        padding: 0;
+    }
+    .hero__logo{
+        width: 80vw;
+    }
+
+}
+
 
 
