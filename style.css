@@ -579,16 +579,20 @@ body{
 @media screen and (max-width: 1020px){
 
 
+
+
     .main{
-        max-width: 100%;
+        max-width: 80%;
     }
     
     .nav{
-        position: absolute;
+        position: fixed;
         left: 0;
-        width: 100%;
         padding: 0;
+        width: 100%;
+        padding: 0px 24px;
     }
+    
 
     .nav__li a{
         font-size: 1rem;
@@ -596,14 +600,171 @@ body{
 
     .nav__ul{
         width: 100%;
-        column-gap: 16px;
+        column-gap: 8px;
         padding: 0;
+    }
+
+    .nav__logo{
+        display: none;
+    }
+    /*HERO MOBILE ---------------*/
+    .hero{
+        height: fit-content;
     }
     .hero__logo{
         width: 80vw;
     }
+    
+    .hero h2, .hero p{
+        width: 80vw;
+    }
+    /*HERO MOBILE ---------------*/
+    
+    .about{
+        flex-direction: column;
+    }
+    
+    .about__cont{
+        flex-direction: column;
+    }
+    .about__cont img{
+        max-width: 80vw; 
+        
+    }
+    .p__cont p{
+        font-size: 1rem;
+        display: block;
+        height: fit-content;
+        min-width: 100%;
+        flex-grow: 1;
+    }
+    /*PROJECTS MOBILE ---------------*/
+    .heart__svg {
+        max-width: 200vw;
+        transform: rotate(-10deg);
+        height: 150vh;
+        opacity: 100%;
+        bottom: -30rem;
+    }
+
+    .projects{
+        margin-bottom: 5rem;
+    }
+
+    .projects__cont{
+        row-gap: 2rem;
+    }
+    .projects__tit{
+        width: 90vw;
+    }
+
+    .proj__cont{
+        flex-direction: column;
+        
+    }
+    .p__tit{
+        width: 100%;
+        font-size: 1.5rem;
+        padding: 0;
+    }
+
+    .logo__cont{
+        width: 100%;
+        height: fit-content;
+    }
+    .p__img{
+        padding: 2rem 2rem;
+        width: 100%;
+        height: fit-content;
+    }
+    .p__info{
+        display: flex;
+        width: 100%;
+    }
+
+    .p__info p{
+        display: none;
+    }
+
+    .p__info h2{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+     /*PROJECTS MOBILE ---------------*/
+
+     .services{
+        max-width: 90vw;
+    }
+
+    .serv__tit{
+        place-self: center;
+        max-width: 120%;
+    }
+    .card__cont{
+        flex-direction: column;
+        align-items: center;
+        max-height: 420px;
+        overflow: hidden;
+    }
+    .c__cont{
+        row-gap: 1.5rem;
+    }
+
+    /*PROJECTS MOBILE ---------------*/
+
+    .services{
+        margin-bottom: 5rem;
+    }
+
+    .c__img{
+        max-width: 110%;
+    }
+    .srv__bg{
+        width: 600px;
+        height: 600px;
+        top: 0;
+        transform: scale(2);
+    }
+
+    .eye_b{
+        height: 150px;
+        width: 150px;
+    }
+
+        /*footer MOBILE ---------------*/
+
+    .foot{
+        width: 100vw;
+        align-self: center;
+        
+    }
+    .o{
+        margin-top: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .f__cont{
+        padding: 1rem;
+    }
+
+    .f__emblem{
+        position: relative;
+        width: 150px;
+        height: 362px;
+        left: -10;
+    }
+    .foot__a{
+        font-size: 1.2rem;
+    }
+    .moon{
+        height: 395px;
+    }
+
+
+
+
+
 
 }
 
-
-
+   
