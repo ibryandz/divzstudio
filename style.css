@@ -173,6 +173,11 @@ body{
     
 }
 
+.arrow{
+    place-self: center;
+    height: 60px ;
+}
+
 /*  ABOUT --------------------------    */
 
 .hands{
@@ -584,14 +589,15 @@ body{
         max-width: 100vw;
     }
     .main{
-        max-width: 80%;
+        max-width: 100%;
+        overflow: hidden;
     }
     
     .nav{
         position: fixed;
         left: 0;
         padding: 0;
-        width: 100%;
+        width: 100vw;
         padding: 0px 24px;
     }
     
@@ -612,6 +618,7 @@ body{
     /*HERO MOBILE ---------------*/
     .hero{
         height: fit-content;
+        margin-bottom: 4rem;
     }
     .hero__logo{
         width: 80vw;
@@ -624,6 +631,10 @@ body{
     .hero__bg{
         overflow: hidden;
     }
+
+
+
+
     /*ABOUT MOBILE ---------------*/
 
     .hands{
@@ -632,6 +643,7 @@ body{
         transform: rotate(-45deg);
         transform: scale(1.5);
         overflow: hidden;
+        top: -50px;
     }
     
     .about{
@@ -641,9 +653,14 @@ body{
     .about__cont{
         flex-direction: column;
     }
+
     .about__cont img{
         max-width: 80vw; 
         
+    }
+
+    .about__eye{
+        display: none;
     }
     .p__cont p{
         font-size: 1rem;
@@ -666,7 +683,9 @@ body{
     }
 
     .projects__cont{
+        place-self: center;
         row-gap: 2rem;
+        max-width: 85vw;
     }
     .projects__tit{
         width: 90vw;
@@ -704,15 +723,12 @@ body{
         font-size: 1.5rem;
         text-align: center;
     }
-     /*PROJECTS MOBILE ---------------*/
+     /*SERVICES MOBILE ---------------*/
 
-     .services{
-        max-width: 90vw;
-    }
 
     .serv__tit{
         place-self: center;
-        max-width: 120%;
+        max-width: 95vw;
     }
     .card__cont{
         flex-direction: column;
@@ -724,14 +740,13 @@ body{
         row-gap: 1.5rem;
     }
 
-    /*PROJECTS MOBILE ---------------*/
 
     .services{
         margin-bottom: 5rem;
     }
 
     .c__img{
-        max-width: 110%;
+        max-width: 95%;
     }
     .srv__bg{
         width: 600px;
@@ -772,6 +787,9 @@ body{
     }
     .moon{
         height: 395px;
+    }
+    .services, .about, .projects{
+        max-width: 100vw;
     }
 
 
